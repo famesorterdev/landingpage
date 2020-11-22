@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Fame Sorter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="sixteen columns" style="margin-top:10%">
+        <div class="ten columns offset-by-three">
+            <form>
+                <div class="row">
+                    <div class="eight columns">
+                        <label for="youtube">Your YouTube channel URL</label>
+                        <input type="text" id="youtube" name="youtube" class="u-full-width" 
+                               placeholder="Example youtube.com/c/YouTubeCreators">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="eight columns">
+                        <label for="keywords">Field of specialisation</label>
+                        <textarea type="text" id="keywords" name="keywords" class="u-full-width" 
+                                  placeholder="Example &#13;Ice cream recipe&#13;Homemade ice creams"></textarea>
+                    </div>
+                </div>
+                <input class="button-primary" type="submit" value="Search">
+                <br />
+                <div class="row">
+                    <div class="eight columns" id="results">
+                        
+                    </div>
+                </div>
+            </form>
+         </div>
+     </div>
+    <script src="index.js"></script>
+</body>
+</html>
