@@ -21,7 +21,7 @@ const formEvent = form.addEventListener('submit', event => {
 });
 
 const searchKeyWords = (keywords) => {
-    axios.put('https://r8y325hxrj.execute-api.ap-southeast-2.amazonaws.com/prod/streams/keywordteller/record', keywords)
+    axios.put('https://r8y325hxrj.execute-api.ap-southeast-2.amazonaws.com/prod/streams/requestStream/record', keywords)
         .then(response => {
             console.log('Keywords Submitted');
             poll(() => {
